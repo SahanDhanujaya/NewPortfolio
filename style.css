@@ -82,3 +82,27 @@ body {
         transform: translateY(-5px);
     }
 }
+header{
+    
+}
+header>nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>nav>ul{
+    display: flex;
+}
+header>nav>ul>li{
+    list-style: none;
+    margin: 15px;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    width: fit-content;
+}
+header>nav>ul>li>a:hover{
+    border-bottom: 2px solid red;
+}
