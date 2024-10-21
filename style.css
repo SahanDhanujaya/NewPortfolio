@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+/* welcome section */
+#welcome>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+
+}
+#welcome>section>h1{
+    font-size: 2rem;
+}
+#welcome>section>p{
+    font-size: 2rem;
+}
+#welcome>section>h3{
+    font-size: 1rem;
+}
+#welcome>section>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    animation: myAnimation 2s 1s infinite;
+}
+#welcome>section>div>div{
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    transform: rotate(135deg);
+    border-bottom: none;
+    border-left: none;
+    cursor: pointer;
+    
+}
+#welcome>section>div>div:nth-child(1){
+    animation: scrollAnimation 1s linear infinite ;
+}
+#welcome>section>div>div:nth-child(2){
+    animation: scrollAnimation 2s linear 2s infinite ;
+}
+#welcome>section>div>div:nth-child(3){
+    animation: scrollAnimation 2s linear 3s infinite ;
+}
+/* animations of welcome section */
+@keyframes scrollAnimation {
+    0%{
+        opacity: 0.2;
+    }
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        border-color: green;
+    }
+}
+@keyframes myAnimation {
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
