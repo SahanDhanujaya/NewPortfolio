@@ -220,6 +220,9 @@ hero>section>img{
         
     
     }
+    #aboutMe>section>img{
+        width: 30%;
+    }
 }
 @media all and (max-width:768px) {
     html{
@@ -228,6 +231,12 @@ hero>section>img{
     hero>main>img{
         width: 25%;
         
+    }
+    #aboutMe>section>img{
+        width: 38%;
+    }
+    #aboutMe>section{
+        padding: 10px;
     }
 }
 @media all and (max-width:426px){
@@ -261,6 +270,24 @@ hero>section>img{
     }
     hero>main>img{
         width: 35%;
+    }
+    #aboutMe{
+        margin-top: 100px;
+    }
+    #aboutMe>section>img{
+        width: 60%;
+    }
+    #aboutMe>section{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #aboutMe>section>div{
+        padding: 10%;
+        
+        
     }
 
 }
