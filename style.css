@@ -161,6 +161,55 @@ hero>section>img{
     margin-top: -50px;
     
 }
+#aboutMe{
+    margin-top: 50px;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+#aboutMe>section{
+    display: flex;
+    justify-content: center;
+}
+#aboutMe>section>img{
+    width: 25%;
+    height: fit-content;
+    place-self: center start;
+    margin-right: 5px;
+}
+#aboutMe>section>div{
+    place-self: start start;
+    margin-left: 5px;
+
+}
+#aboutMe>section>div>h1{
+    margin: 0;
+    padding: 0;
+}
+#aboutMe>section>div>h1>span{
+    color: rgb(191, 191, 115);
+}
+#aboutMe>section>div>p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#aboutMe>section>div>div{
+    width: 100%;
+    box-shadow: rgba(125, 125, 125, 1) 0px 50px 100px -20px, rgba(131, 131, 131, 1) 0px 30px 60px -30px, rgba(112, 112, 112, 1) 0px -2px 6px 0px inset;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 10px;
+    align-content: center;
+}
+#aboutMe>section>div>div>h1{
+    font-size: 0.8rem;
+    color: rgb(148, 148, 148);
+    padding: 5px;
+    width: 20%;
+    display: inline-block;
+    
+}
 @media all and (max-width:1024px) {
     html{
         font-size: 90%;
