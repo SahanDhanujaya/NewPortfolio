@@ -4,14 +4,17 @@
 }
 
 body {
-    overflow: hidden;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-    background-color: black;
+    background-color: #15181a;
     color: white;
 }
 /* welcome section */
+#welcome{
+    background-color: black;
+    color: white;
+}
 #welcome>section {
     display: flex;
     flex-direction: column;
@@ -82,6 +85,7 @@ body {
         transform: translateY(-5px);
     }
 }
+/* header */
 header{
     
 }
@@ -104,5 +108,115 @@ header>nav>ul>li>a{
     width: fit-content;
 }
 header>nav>ul>li>a:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid rgb(191, 191, 115);
+}
+/* hero section */
+hero{
+    
+}
+hero>main{
+     
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+hero>main>section:first-child>button{
+    background-color: #15181a;
+    border: 1px solid rgb(191, 191, 115);
+    color: rgb(191, 191, 115);
+    margin-right: 10px;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin-top: 10px;
+    width: 20%;
+}
+hero>main>section:first-child{
+    place-self: center end;
+}
+hero>main>section:first-child>p{
+    width: 80%;
+}
+hero>main>section:first-child>button:hover{
+    background-color:rgb(191, 191, 115) ;
+    color: #15181a;
+    border: #15181a;
+}
+
+hero>main>img{
+    width: 20%;
+    opacity: 0.8;
+    box-shadow: rgb(0, 0, 0) 0px 10px 20px, rgb(0, 0, 0) 0px 6px 6px;
+    
+}
+hero>section{
+    display: flex;
+    justify-content: center;
+}
+hero>section>img{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-top: -50px;
+    
+}
+@media all and (max-width:1024px) {
+    html{
+        font-size: 90%;
+    }
+    hero>main{
+     
+        height: 400px;
+        
+    
+    }
+}
+@media all and (max-width:768px) {
+    html{
+        font-size: 80%;
+    }
+    hero>main>img{
+        width: 25%;
+        
+    }
+}
+@media all and (max-width:426px){
+    html{
+        font-size: 70%;
+    }
+    header>nav{
+        display: none;
+    }
+    hero>main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+    hero>main>section:first-child{
+        padding: 10px;
+    }
+    hero>main>section:first-child>p{
+        width: 100%;
+    }
+    hero>section>img{
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin-top: -9%;
+       
+        
+    }
+    hero>main>img{
+        width: 35%;
+    }
+
+}
+@media all and (max-width:321px) {
+    html{
+        font-size: 60%;
+    }
 }
