@@ -9,6 +9,7 @@ body {
     font-style: normal;
     background-color: #15181a;
     color: white;
+    overflow-x: hidden;
 }
 /* welcome section */
 #welcome{
@@ -210,6 +211,50 @@ hero>section>img{
     display: inline-block;
     
 }
+
+#skill>section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 500px;
+    padding: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    grid-gap:30px ;
+}
+#skill>section>div{
+
+    width: 90%;
+    height: 90%;
+    background-color: rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    
+}
+#skill>h1{
+    margin-top: 10%;
+    text-align: center;
+}
+#skill>h1>span{
+    color: rgb(191, 191, 115);
+}
+#skill>section>div{
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill>section>div>div>button{
+    background-color:rgb(45, 45, 45);
+    color: white;
+    border: 1px solid rgb(191, 191, 115);
+    padding: 5px;
+    border-radius: 10px;
+
+}
 @media all and (max-width:1024px) {
     html{
         font-size: 90%;
@@ -222,6 +267,12 @@ hero>section>img{
     }
     #aboutMe>section>img{
         width: 30%;
+    }
+    #skill>section{
+        grid-gap: 20px;
+    }
+    #skill>section>div{
+        height: 90%;
     }
 }
 @media all and (max-width:768px) {
@@ -238,6 +289,16 @@ hero>section>img{
     #aboutMe>section{
         padding: 10px;
     }
+    #skill>section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skill>section>div{
+        height: 80%;
+    }
+    #skill>section>div>div>button{
+        font-size: 0.8em;
+    }
+    
 }
 @media all and (max-width:426px){
     html{
@@ -286,9 +347,22 @@ hero>section>img{
     }
     #aboutMe>section>div{
         padding: 10%;
-        
-        
     }
+    #skill>section{
+        padding: 10%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #skill>section>div{
+        width: 85%;
+        margin: 10px;
+    }
+    #skill{
+        margin-top: 100px;
+    }
+    #skill>section>div>div>button{
+        font-size: 0.8em;
+    }
+
 
 }
 @media all and (max-width:321px) {
