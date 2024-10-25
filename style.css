@@ -566,7 +566,8 @@ hero>section>img{
         align-items: center;
     }
     #project>#desc{
-        width: 80%;
+        width: 90%;
+        font-size: 1.5rem;
     }
     #project>#desc>h1{
         text-align: center;
@@ -576,9 +577,11 @@ hero>section>img{
         width: 100%;
         padding-left: 0;
         
+        
     }
     #project>#desc>button{
         padding: 4px;
+        font-size: ;
     }
 
 }
