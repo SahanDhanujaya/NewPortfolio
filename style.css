@@ -255,6 +255,145 @@ hero>section>img{
     border-radius: 10px;
 
 }
+#education>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding:150px;
+    padding-bottom: 0;
+    margin-bottom: 200px;
+}
+#education>section>div{
+    width: 30%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    z-index: 2;
+    background-color:rgb(45, 45, 45);
+    height: fit-content;
+    padding: 20px;
+    background-size: cover;
+    
+
+}
+
+#education>section>div>i{
+    color: rgb(191, 191, 115);
+}
+#education>section>div:nth-child(1){
+    font-size: 0.9rem;
+    width: 20%;
+    height: fit-content;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+#education>section>div:nth-child(3){
+    width: 20%;
+    height: fit-content;
+    position: relative;
+    right: 20px;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+#education>h1{
+    text-align: center;
+
+}
+#education>h1>span{
+    color: rgb(191, 191, 115);
+}
+#education>section>div>h3{
+    color: rgb(191, 191, 115);
+}
+#education>section>div:hover{
+    scale: 1.5;
+    z-index: 3;
+}
+#project{
+    display: flex;
+    padding: 10%;
+    padding-top: 0;
+}
+#project>#desc{
+    width: 40%;
+}
+#project>#wrapper{
+    width: 60%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:10px;
+}
+#project>#wrapper::-webkit-scrollbar{
+    width: 0;
+}
+#project>#wrapper>div{
+    border-radius: 20px;
+    min-width: 40%;
+    height: 250px;
+    margin-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(45, 45, 45);
+    position: relative;
+
+}
+#project span{
+    color: rgb(191, 191, 115);
+}
+#project>h1{
+    margin-top: 4%;
+
+}
+#project>#desc>p>span{
+    font-weight: bold;
+}
+#project>#wrapper>div>h5{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+#project>#desc>button{
+    background-color: #15181a;
+    border:1px solid rgb(191, 191, 115);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1%;
+}
+#project>#desc>button:hover{
+    background-color: rgb(191, 191, 115);
+    color: black;
+    border: 1px #15181a solid;
+    cursor: pointer;
+}
+#project>#wrapper>div>img{
+    width: 100%;
+    opacity: 0.4;
+}
+#project>#wrapper>div>button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40%;
+    height: fit-content;
+    padding: 2%;
+    background-color: #15181a;
+    border: 1px solid rgb(191, 191, 115);
+    color: white;
+    border-radius: 10px;
+}
+#project>#wrapper>div:hover{
+    scale: 1.1;
+}
+#project>#wrapper>div>img:hover{
+    opacity: 1;
+}
 @media all and (max-width:1024px) {
     html{
         font-size: 90%;
@@ -263,7 +402,6 @@ hero>section>img{
      
         height: 400px;
         
-    
     }
     #aboutMe>section>img{
         width: 30%;
@@ -274,8 +412,24 @@ hero>section>img{
     #skill>section>div{
         height: 90%;
     }
+    #education>section>div{
+        font-size: 0.8rem;
+    }
+    #education>section>div:first-child{
+        width: 30%;
+    }
+    #education>section>div:last-child{
+        width: 30%;
+    }
+    #project>#wrapper>div{
+        height: 100%;
+    }
+    #project>#wrapper>div>button{
+        font-size: 0.7rem;
+    }
+
 }
-@media all and (max-width:768px) {
+@media all and (max-width:769px) {
     html{
         font-size: 80%;
     }
@@ -298,7 +452,29 @@ hero>section>img{
     #skill>section>div>div>button{
         font-size: 0.8em;
     }
-    
+    #education>section>div{
+        font-size: 0.7rem;
+    }
+    #education>section>div:first-child{
+        font-size: 0.7rem;
+    }
+    #education>section>div:last-child{
+        font-size: 0.7rem;
+    }
+    #education>section{
+        padding-top: 50px;
+        margin-bottom: 15%;
+    }
+    #project>#wrapper>div{
+       height: 80%;
+       
+    }
+    #project>#desc>h1{
+        font-size: 3rem;
+    }
+    #project>#desc>p{
+        font-size: 0.8rem;
+    }
 }
 @media all and (max-width:426px){
     html{
@@ -348,6 +524,9 @@ hero>section>img{
     #aboutMe>section>div{
         padding: 10%;
     }
+    #aboutMe>section>div>h1{
+        text-align: center;
+    }
     #skill>section{
         padding: 10%;
         grid-template-columns: repeat(1,1fr);
@@ -362,11 +541,85 @@ hero>section>img{
     #skill>section>div>div>button{
         font-size: 0.8em;
     }
-
+    #education>section{
+        flex-direction: column;
+    }
+    #education>section>div{
+        margin-top: 4%;
+        width: 150%;
+    }
+    #education>section>div:first-child{
+        left: 0;
+        width: 150%;
+        
+    }
+    #education>section>div:last-child{
+        right: 0;
+        width: 150%;
+    }
+    #education{
+        margin-top: 100%;
+    }
+    #project{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #project>#desc{
+        width: 80%;
+    }
+    #project>#desc>h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #project>#wrapper{
+        width: 100%;
+        padding-left: 0;
+        
+    }
+    #project>#desc>button{
+        padding: 4px;
+    }
 
 }
+@media all and (max-width:376px){
+    #education>section>div{
+        margin-top: 4%;
+        width: 200%;
+    }
+    #education>section>div:first-child{
+        left: 0;
+        width: 200%;
+        
+    }
+    #education>section>div:last-child{
+        right: 0;
+        width: 200%;
+    }
+    #project>#desc{
+        width: 90%;
+    }
+    #project>#desc>button{
+        font-size: 0.6rem;
+        padding: 3px;
+    }
+} 
 @media all and (max-width:321px) {
     html{
         font-size: 60%;
     }
+    #education>section>div{
+        width: 200px;
+        margin-top: 20%;
+    }
+    #education>section>div:first-child{
+        left: 0;
+        width: 200px;
+        
+    }
+    #education>section>div:last-child{
+        right: 0;
+        width: 200px;
+    }
+    
 }
