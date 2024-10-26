@@ -262,10 +262,11 @@ hero>section>img{
     padding:150px;
     padding-bottom: 0;
     margin-bottom: 200px;
+    
 }
 #education>section>div{
     width: 30%;
-    height: 200px;
+    height: 500px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
     z-index: 2;
@@ -312,7 +313,7 @@ hero>section>img{
 }
 #project{
     display: flex;
-    padding: 10%;
+    padding: 15%;
     padding-top: 0;
 }
 #project>#desc{
@@ -341,8 +342,9 @@ hero>section>img{
 #project span{
     color: rgb(191, 191, 115);
 }
-#project>h1{
+#project h1{
     margin-top: 4%;
+    font-size: 2rem;
 
 }
 #project>#desc>p>span{
@@ -394,6 +396,125 @@ hero>section>img{
 #project>#wrapper>div>img:hover{
     opacity: 1;
 }
+#assignment>h1{
+    text-align: center;
+}
+#assignment span{
+    color: rgb(191, 191, 115);
+}
+#assignment>#wrapper>section>div{
+    min-width: 15%;
+    height: 250px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(45, 45, 45);
+    padding: 1%;
+    
+}
+#assignment>#wrapper>section>div>h4{
+    text-align: center;
+
+}
+#assignment>#wrapper{
+    padding: 15%;
+    padding-top: 5%;
+}
+#assignment>#wrapper>section{
+    display: flex;
+    margin: 10px;
+    margin-top: 0;
+    overflow-x: auto;
+    
+}
+#assignment>#wrapper>section>div>div{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+#assignment>#wrapper>section>div>div>button{
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 12px;
+    border: 1px solid rgb(191, 191, 115);
+    background-color: #15181a;
+    color: white;
+}
+#assignment>#wrapper>section::-webkit-scrollbar{
+    width: 0;
+}
+#assignment>#wrapper>section>div>img{
+    width:100% ;
+}
+.hireMe>h1{
+    text-align: center;
+}
+.hireMe span{
+    color: rgb(191, 191, 115);
+} 
+.hireMe>section{
+    display: flex;
+    padding: 10%;
+}
+
+.hireMe>section>div:nth-child(1){
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.hireMe>section>div:nth-child(1)>form{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(45, 45, 45);
+    padding: 10%;
+    padding-top: 5%;
+    border-radius: 10px;
+    
+}
+.hireMe>section>div:nth-child(1)>form>div>input{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(38, 38, 38);
+    border: 1px solid rgb(191, 191, 115);
+    padding: 2px;
+    
+
+}
+.hireMe>section>div:nth-child(1)>form>div>button{
+    padding: 1%;
+    background-color:  rgb(38, 38, 38);
+    border: 1px solid rgb(191, 191, 115);
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+}
+.hireMe>section>div:nth-child(1)>form>div>textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color:  rgb(38, 38, 38);
+    border: 1px solid rgb(191, 191, 115);
+    padding: 2px;
+}
+.hireMe>section>#contact{
+    width: 50%;
+}
+.hireMe>section>#contact>section>img{
+    width: 50%;
+    margin-left: 2%;
+}
+.hireMe>section>#contact>section:nth-child(2)>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(45, 45, 45);;
+    display: flex;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 10px;
+}
+.hireMe>section>#contact>section:nth-child(2)>div>div:nth-child(2){
+    display: flex;
+}
 @media all and (max-width:1024px) {
     html{
         font-size: 90%;
@@ -427,7 +548,19 @@ hero>section>img{
     #project>#wrapper>div>button{
         font-size: 0.7rem;
     }
-
+    #assignment>#wrapper>section>div{
+        min-width: 20%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>input{
+        height: 30px;
+        
+    }
+    .hireMe>section>div:nth-child(1)>form>div>button{
+        padding: 0.8%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>textarea{
+        height: 100px;
+    }
 }
 @media all and (max-width:769px) {
     html{
@@ -474,6 +607,9 @@ hero>section>img{
     }
     #project>#desc>p{
         font-size: 0.8rem;
+    }
+    #assignment>#wrapper>section>div{
+        min-width: 25%;
     }
 }
 @media all and (max-width:426px){
@@ -581,7 +717,33 @@ hero>section>img{
     }
     #project>#desc>button{
         padding: 4px;
-        font-size: ;
+    }
+    #assignment>#wrapper>section>div{
+        min-width: 55%;
+    }
+    .hireMe>section{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .hireMe>section>div:nth-child(1){
+        width: 90%;
+    }
+    .hireMe>section>div:nth-child(1)>form{
+        width: 130%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>input{
+        height: 20px;
+        
+    }
+    .hireMe>section>div:nth-child(1)>form>div>button{
+        padding: 0.5%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>textarea{
+        height: 100px;
+    }
+    .hireMe>section>div:nth-child(2){
+        width: 90%;
     }
 
 }
@@ -606,6 +768,9 @@ hero>section>img{
         font-size: 0.6rem;
         padding: 3px;
     }
+    #assignment>#wrapper>section>div{
+        min-width: 65%;
+    }
 } 
 @media all and (max-width:321px) {
     html{
@@ -623,6 +788,9 @@ hero>section>img{
     #education>section>div:last-child{
         right: 0;
         width: 200px;
+    }
+    #assignment>#wrapper>section>div{
+        min-width: 75%;
     }
     
 }
