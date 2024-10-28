@@ -402,118 +402,135 @@ hero>section>img{
 #assignment span{
     color: rgb(191, 191, 115);
 }
-#assignment>#wrapper>section>div{
-    min-width: 15%;
-    height: 250px;
-    border-radius: 12px;
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color:rgb(45, 45, 45);
-    padding: 1%;
-    
-}
-#assignment>#wrapper>section>div>h4{
-    text-align: center;
-
-}
-#assignment>#wrapper{
-    padding: 15%;
-    padding-top: 5%;
-}
-#assignment>#wrapper>section{
+#assignment #wrapper{
     display: flex;
-    margin: 10px;
-    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+    padding-top: 5em;
+}
+#assignment #wrapper>.list{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
     overflow-x: auto;
-    
+    min-width: 70%;
 }
-#assignment>#wrapper>section>div>div{
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-}
-#assignment>#wrapper>section>div>div>button{
-    margin-top: 5%;
-    padding: 3%;
-    border-radius: 12px;
-    border: 1px solid rgb(191, 191, 115);
-    background-color: #15181a;
-    color: white;
-}
-#assignment>#wrapper>section::-webkit-scrollbar{
+#assignment #wrapper>.list::-webkit-scrollbar{
     width: 0;
 }
-#assignment>#wrapper>section>div>img{
-    width:100% ;
+#assignment #wrapper>.list>.box{
+    min-width:300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color:rgb(45, 45, 45);
+    margin: 10px;
+    border-radius: 12px;
+}
+#assignment #wrapper>button{
+    padding: 8px;
+    border: none;
+    background-color:rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+  
+
+}
+#assignment #wrapper>button>img{
+    width: 25px;
+    height: 25px;
+}
+#assignment #wrapper>button:nth-child(1){
+    transform: rotate(180deg);
+}
+
+.hireMe>h1:first-child{
+    color: rgb(191, 191, 115);
+    font-size: 1.3rem;
+
+}
+.hireMe>h1:nth-child(2){
+    font-size: 2.4rem;
+   
+   
 }
 .hireMe>h1{
     text-align: center;
 }
-.hireMe span{
-    color: rgb(191, 191, 115);
-} 
 .hireMe>section{
-    display: flex;
-    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: start;
+  
+    
 }
-
-.hireMe>section>div:nth-child(1){
-    width: 50%;
+.hireMe>section>#contact>div{
     display: flex;
-    justify-content: center;
-}
-.hireMe>section>div:nth-child(1)>form{
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    align-items: center;
+    padding: 1em;
+    margin:10px;
+    border-radius: 12px ;
     background-color:rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.hireMe>section>#contact>div>div{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 1.2rem;
+}
+.hireMe>section>#contact>div>div:nth-child(2)>a{
+    color: white;
+    
+}
+.hireMe>section>#contact>div>div img{
+    width: 30px;
+    height: 30px;
+}
+.hireMe>section>#email>form>div>input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(191, 191, 115);
+    background-color:rgb(45, 45, 45);
+    color: white;
+}
+.hireMe>section>#email>form>div>textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(191, 191, 115);
+    background-color:rgb(45, 45, 45);
+    color: white;
+}
+.hireMe>section>#email>form{
+    width: 90%;
+    padding: 5%;
+    background-color:rgb(45, 45, 45);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.hireMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hireMe>section{
     padding: 10%;
     padding-top: 5%;
-    border-radius: 10px;
-    
 }
-.hireMe>section>div:nth-child(1)>form>div>input{
-    width: 100%;
-    height: 45px;
-    border-radius: 10px;
-    background-color: rgb(38, 38, 38);
-    border: 1px solid rgb(191, 191, 115);
-    padding: 2px;
-    
-
-}
-.hireMe>section>div:nth-child(1)>form>div>button{
-    padding: 1%;
-    background-color:  rgb(38, 38, 38);
-    border: 1px solid rgb(191, 191, 115);
-    color: white;
-    width: 100px;
-    border-radius: 10px;
-}
-.hireMe>section>div:nth-child(1)>form>div>textarea{
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-    background-color:  rgb(38, 38, 38);
-    border: 1px solid rgb(191, 191, 115);
-    padding: 2px;
-}
-.hireMe>section>#contact{
-    width: 50%;
-}
-.hireMe>section>#contact>section>img{
-    width: 50%;
-    margin-left: 2%;
-}
-.hireMe>section>#contact>section:nth-child(2)>div{
+.hireMe>section>#email>form button{
+    padding: 2%;
+    background-color: rgb(45, 45, 45);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: rgb(45, 45, 45);;
-    display: flex;
-    padding: 3%;
-    margin: 2%;
+    color: white;
+    border: 1px solid rgb(191, 191, 115);
     border-radius: 10px;
-}
-.hireMe>section>#contact>section:nth-child(2)>div>div:nth-child(2){
-    display: flex;
+
 }
 @media all and (max-width:1024px) {
     html{
@@ -560,6 +577,10 @@ hero>section>img{
     }
     .hireMe>section>div:nth-child(1)>form>div>textarea{
         height: 100px;
+    }
+    #assignment #wrapper>.list>.box{
+        min-width:150px;
+        height: 20 0px;
     }
 }
 @media all and (max-width:769px) {
@@ -718,32 +739,27 @@ hero>section>img{
     #project>#desc>button{
         padding: 4px;
     }
-    #assignment>#wrapper>section>div{
-        min-width: 55%;
+    #assignment #wrapper>.list>.box{
+        min-width:150px;
+        height: 200px;
     }
-    .hireMe>section{
-        
-        flex-direction: column;
-        align-items: center;
+    #assignment #wrapper>button{
+        width: 40px;
     }
-    .hireMe>section>div:nth-child(1){
-        width: 90%;
-    }
-    .hireMe>section>div:nth-child(1)>form{
-        width: 130%;
-    }
-    .hireMe>section>div:nth-child(1)>form>div>input{
+    #assignment #wrapper>button>img{
+        width: 20px;
         height: 20px;
-        
     }
-    .hireMe>section>div:nth-child(1)>form>div>button{
-        padding: 0.5%;
+   
+    .hireMe>section{
+        grid-template-columns: 1fr;
     }
-    .hireMe>section>div:nth-child(1)>form>div>textarea{
-        height: 100px;
+    .hireMe>section #email{
+        margin: 0;
+        width: 92%;
     }
-    .hireMe>section>div:nth-child(2){
-        width: 90%;
+    .hireMe>section>#contact>div{
+        padding: 0.8em;
     }
 
 }
@@ -771,6 +787,17 @@ hero>section>img{
     #assignment>#wrapper>section>div{
         min-width: 65%;
     }
+    #assignment #wrapper>.list>.box{
+        min-width:125px;
+        height: 180px;
+    }
+    #assignment #wrapper>button{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 } 
 @media all and (max-width:321px) {
     html{
@@ -791,6 +818,21 @@ hero>section>img{
     }
     #assignment>#wrapper>section>div{
         min-width: 75%;
+    }
+    #assignment #wrapper>.list>.box{
+        min-width:150px;
+        height: 200px;
+    }
+    #assignment #wrapper>.list{
+        min-width: 100%;
+    }
+    .hireMe>section>div:nth-child(1)>form>div>button{
+        padding: 1%;
+        background-color:  rgb(38, 38, 38);
+        border: 1px solid rgb(191, 191, 115);
+        color: white;
+        width: 70px;
+        border-radius: 10px;
     }
     
 }
