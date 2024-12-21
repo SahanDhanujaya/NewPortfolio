@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+            padding: 20%;
+        }
+
+        section>div {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        #mid {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        #first {
+            justify-content: start;
+        }
+
+        #last {
+            justify-content: end;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="first">
+        <div style="background-color: red;"></div>
+    </section>
+    <section id="mid">
+        <div style="background-color: green;"></div>
+        <div style="background-color: blue;"></div>
+        <div style="background-color: yellow;"></div>
+        <div style="background-color: pink;"></div>
+    </section>
+    <section id="last">
+        <div style="background-color: violet;"></div>
+    </section>
+    <script>
+        let arr = ["red", "green", "blue", "yellow", "pink", "violet"];
+        setInterval(function () {
+            let last_value = arr.pop(arr[5]);
+            arr.unshift(last_value);
+            document.getElementsByTagName("div")[0].style.background = arr[0];
+            document.getElementsByTagName("div")[1].style.background = arr[1];
+            document.getElementsByTagName("div")[2].style.background = arr[2];
+            document.getElementsByTagName("div")[3].style.background = arr[3];
+            document.getElementsByTagName("div")[4].style.background = arr[4];
+            document.getElementsByTagName("div")[5].style.background = arr[5];
+        },1000);
+
+    </script>
+</body>
+
+</html>

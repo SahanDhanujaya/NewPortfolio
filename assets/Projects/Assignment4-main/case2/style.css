@@ -1,0 +1,49 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(54, 54, 54);
+    
+    
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#main{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);  
+    position: relative;
+
+}
+#main>#first{
+    background-color: red;
+    width: 105px;
+    height: 105px;
+    border-top-right-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 10px solid red;
+    
+    
+}
+#circle{
+width: 230px;
+height: 230px;
+background-color: blueviolet;
+position: absolute;
+text-align: center;
+align-content: center;
+font-size: 2em;
+margin: auto;
+border-radius: 100%;
+
+}
+#main:hover{
+    transform: rotatez(360deg);
+    transition-duration: 10s;
+
+}

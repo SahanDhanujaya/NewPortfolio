@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    overflow: hidden;
+}
+section:nth-child(1){
+    width: 50vw;
+    height: 50vh;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-content: center;
+}
+section:nth-child(2){
+    width: 50vw;
+    height: 50vh;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-content: center;
+}
+section:nth-child(3){
+    width: 50vw;
+    height: 50vh;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    align-content: center;
+}
+section:nth-child(4){
+    width: 50vw;
+    height: 50vh;
+    background-color: hotpink; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    align-content: center;
+}
+.circle{
+    width: 15vw;
+    aspect-ratio: 1/1;
+    border-radius: 10000vh;
+    background-color: white;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    align-content: center;
+}
+.square{
+    width: 5vw;
+    aspect-ratio: 1/1;
+    background-color: red;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(1)>div:nth-child(2){
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    top: -10vw;
+    right: 80%;
+    border-radius: 5000px;
+    
+}
+section:nth-child(2)>div:nth-child(2){
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    top: -10vw;
+    left: 80%;
+    border-radius: 5000px;
+    
+}
+section:nth-child(3)>div:nth-child(2){
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    bottom: -10vw;
+    right: 80%;
+    border-radius: 5000px;
+    
+}
+section:nth-child(4)>div:nth-child(2){
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    bottom: -10vw;
+    left: 80%;
+    border-radius: 5000px;
+    
+}
+section:nth-child(4)>div:nth-child(3){
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    bottom: calc(-20vw/2);
+    left: -10vw;
+    border-radius: 5000px;
+    
+}
+section:nth-child(2)>div:nth-child(3){
+    width: 20vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    position: absolute;
+    top: calc(-20vw/2);
+    left: -10vw;
+    border-radius: 5000px;
+    
+}
+section:nth-child(5){
+    width: 10vw;
+    aspect-ratio: 1/1;
+    position: absolute;
+    background-color: white;
+    top: 43%;
+    left: 44%;
+
+}
+section:nth-child(5)>div{
+    width: 6vw;
+    aspect-ratio: 1/1;
+    position: absolute;
+    background-color: red;
+    border-radius: 5000px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}

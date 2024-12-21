@@ -1,0 +1,119 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    background-color: antiquewhite;
+    height: 60px;
+    position: relative;
+
+}
+header>img{
+    position: absolute;
+    width: 150px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header>nav>ul{
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 19px;
+}
+header>nav>ul>li{
+    display: inline-block;
+    padding-left: 10px;
+    justify-items: center;
+
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+header>nav>ul>li>a:hover{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px purple solid ;
+}
+main{
+    position: relative;
+}
+aside{
+    background-color: purple;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box; 
+    top: 0;
+    bottom: 0;
+    
+}
+aside>ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+aside>ul>li{
+    height: fit-content;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 23px;    
+    text-align-last: left;
+    text-align: center;
+    
+
+}
+aside>ul>li:hover{
+    background-color: rgb(154, 0, 154);
+}
+aside>ul>li>a{
+    text-align: center;
+    color: #ffff;
+    text-decoration: none;
+    position: absolute;
+    left:20px;
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    height: 30px;
+    align-content: center;
+    bottom: 0;
+}
+footer>p{
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+main>section{
+    margin-top: 0;
+    margin-left: 150px;
+}
+main>div{
+    display: flex;
+    flex-direction: row;
+}
+main>div>div{
+    position: relative;
+    left: 150px;
+    width: calc(87.86vw/3);
+    background: url(assests/gif/monkey.gif) ;
+    height: 300px;
+    border: 1px solid black;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case4</title>
+    <style>
+        /* variable declaration and initialization */
+        :root{
+            --width: 180px;/* we can add any name as variable name*/ 
+            --height:80px;
+        }
+
+       body{
+        padding: 0;
+        margin: 0;
+    /* overflow: hidden; */
+       }
+        div{
+            /*Assign values from variables 
+            height: var(--height);
+            width: var(--width); */
+            position: absolute;
+            align-self: center;
+            border: 2px solid tomato;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+            animation: myAnimation 3s linear infinite ;
+        }
+        @keyframes myAnimation {
+            0%{
+                
+            }
+            25%{
+                width: 50px;
+                height: 50px;
+                border: 2px solid rgba(255, 99, 71, 0.824);
+            }
+            50%{
+                width: 100px;
+                height: 100px;
+                border: 2px solid rgba(255, 99, 71, 0.632);
+            }
+            75%{
+                width: 150px;
+                height: 150px;
+                border: 2px solid rgba(255, 99, 71, 0.189);
+            }
+            100%{
+                width: 200px;
+                height: 200px;
+                border: 2px solid rgba(255, 99, 71, 0.251);
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

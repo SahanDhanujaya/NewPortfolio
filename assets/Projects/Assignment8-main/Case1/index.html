@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            
+        }
+
+        section>div {
+            width: 50px;
+            aspect-ratio: 1/1;
+            text-align: end;
+            margin: 60px;
+            
+        }
+        section>div>h1{
+            text-align: end;
+            width: 160px
+        }
+        section>div>img{
+            width: 200px;
+        }
+        #last-div>img{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="box1">
+            <h1>A</h1>
+            <img src="../assets/imgs/image_processing20190911-31414-10t2fo5.gif" alt="man">
+        </div>
+        <div id="box2">
+            <h1>B</h1>
+            <img src="../assets/imgs/image_processing20190911-31414-10t2fo5.gif" alt="man">
+        </div>
+        <div id="box3">
+            <h1>C</h1>
+            <img src="../assets/imgs/image_processing20190911-31414-10t2fo5.gif" alt="man">
+        </div>
+        <div id="box4">
+            <h1>D</h1>
+            <img src="../assets/imgs/image_processing20190911-31414-10t2fo5.gif" alt="man">
+        </div>
+        <div id="box5">
+            <h1>E</h1>
+            <img src="../assets/imgs/image_processing20190911-31414-10t2fo5.gif" alt="man">
+        </div>
+        <div id="box6">
+            <h1>F</h1>
+            <img src="../assets/imgs/image_processing20190911-31414-10t2fo5.gif" alt="man">
+        </div>
+        <div id="last-div">
+            <img src="../assets/imgs/sunset_sunrise_dribble_4_3.gif" alt="man">
+        </div>
+    </section>
+    <script>
+        let arr = ["A", "B", "C", "D", "E", "F"];
+        setInterval(function () {
+            let last_value = arr.pop();
+            arr.unshift(last_value);
+            console.log(arr.toString());
+            document.getElementsByTagName("h1")[0].innerText = arr[0];
+            document.getElementsByTagName("h1")[1].innerText = arr[1];
+            document.getElementsByTagName("h1")[2].innerText = arr[2];
+            document.getElementsByTagName("h1")[3].innerText = arr[3];
+            document.getElementsByTagName("h1")[4].innerText = arr[4];
+            document.getElementsByTagName("h1")[5].innerText = arr[5];
+        }, 3000);
+
+    </script>
+</body>
+
+</html>

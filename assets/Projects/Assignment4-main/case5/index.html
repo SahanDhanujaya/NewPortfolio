@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+        }
+
+        section {
+            width: 200vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: 5px solid black;
+            overflow-x: hidden;
+        }
+
+        section>div {
+            
+            width: 50vw;
+            height: 50vh;
+        }
+
+        section>div>div {
+            width: 700px;
+            height: 400px;
+        }
+
+        main>section:hover{
+            animation: myAnimation 6s ;
+
+        }
+
+        @keyframes myAnimation {
+            0%,20%{
+               transform: translateX(0%); 
+            }
+            25%,45%{
+                transform: translateX(-25%); 
+            }
+            50%,70%{
+                transform: translateX(-50%); 
+            }
+            75%{
+                transform: translateX(-75%); 
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div
+                style="background-image: url(assets/slide1.jpeg); background-size: cover ; background-position: center;">
+            </div>
+            <div
+                style="background-image: url(assets/slide2.jpeg); background-size: cover ; background-position: center;">
+            </div>
+            <div
+                style="background-image: url(assets/slide3.jpeg); background-size: cover ; background-position: center;">
+            </div>
+            <div
+                style="background-image: url(assets/slide4.jpeg); background-size: cover ; background-position: center;">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

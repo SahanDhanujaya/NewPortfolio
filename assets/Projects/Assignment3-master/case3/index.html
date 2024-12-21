@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Case3</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body>div{
+            width: 200px;
+            border-radius: 100%;
+            aspect-ratio: 1/1;
+            border: 10px rebeccapurple solid;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 1;
+        }
+        body>div>div{
+            width: 180px;
+            border-radius: 100%;
+            aspect-ratio: 1/1;
+            border: 10px mediumpurple solid;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        body section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        body section div{
+            position: absolute;
+            width: 180px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            top: 1px;
+            left: 0;
+            bottom: 0;
+            right: 15px;
+            margin: auto;
+            background-color: lightgreen;
+            text-align: center;
+            align-content: center;
+            font-weight: bolder;
+        }
+        #case2{
+            background-color: #fb9e9e;
+        }
+        #case3{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+    </div>
+<section class="main">
+    <div id="case1">Hello</div>
+</section>
+<section class="main">
+    <div id="case2">Welcome To</div>
+</section>
+<section class="main">
+    <div id="case3">Institute Of <br> Software <br> Engineering</div>
+</section>
+</body>
+</html>

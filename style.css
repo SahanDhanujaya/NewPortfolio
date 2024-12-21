@@ -11,11 +11,13 @@ body {
     color: white;
     overflow-x: hidden;
 }
+
 /* welcome section */
-#welcome{
+#welcome {
     background-color: black;
     color: white;
 }
+
 #welcome>section {
     display: flex;
     flex-direction: column;
@@ -24,23 +26,28 @@ body {
     height: 100vh;
 
 }
-#welcome>section>h1{
+
+#welcome>section>h1 {
     font-size: 2rem;
 }
-#welcome>section>p{
+
+#welcome>section>p {
     font-size: 2rem;
 }
-#welcome>section>h3{
+
+#welcome>section>h3 {
     font-size: 1rem;
 }
-#welcome>section>div{
+
+#welcome>section>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     animation: myAnimation 2s 1s infinite;
 }
-#welcome>section>div>div{
+
+#welcome>section>div>div {
     width: 10px;
     height: 10px;
     border: 3px solid white;
@@ -48,82 +55,110 @@ body {
     border-bottom: none;
     border-left: none;
     cursor: pointer;
-    
+
 }
-#welcome>section>div>div:nth-child(1){
-    animation: scrollAnimation 1s linear infinite ;
+
+#welcome>section>div>div:nth-child(1) {
+    animation: scrollAnimation 1s linear infinite;
 }
-#welcome>section>div>div:nth-child(2){
-    animation: scrollAnimation 2s linear 2s infinite ;
+
+#welcome>section>div>div:nth-child(2) {
+    animation: scrollAnimation 2s linear 2s infinite;
 }
-#welcome>section>div>div:nth-child(3){
-    animation: scrollAnimation 2s linear 3s infinite ;
+
+#welcome>section>div>div:nth-child(3) {
+    animation: scrollAnimation 2s linear 3s infinite;
 }
+
 /* animations of welcome section */
 @keyframes scrollAnimation {
-    0%{
+    0% {
         opacity: 0.2;
     }
-    25%{
+
+    25% {
         opacity: 0.4;
     }
-    50%{
+
+    50% {
         opacity: 0.6;
     }
-    75%{
+
+    75% {
         opacity: 0.8;
     }
-    100%{
+
+    100% {
         opacity: 1;
         border-color: green;
     }
 }
+
 @keyframes myAnimation {
-    from{
+    from {
         transform: translateY(5px);
     }
-    to{
+
+    to {
         transform: translateY(-5px);
     }
 }
+
 /* header */
-header{
-    
+header {
+    background-color: #000000;
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
 }
-header>nav{
+
+header>nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header>nav>ul{
+
+header>nav>ul {
     display: flex;
 }
-header>nav>ul>li{
+
+header>nav>ul>li {
     list-style: none;
     margin: 15px;
+    padding: 5px;
 }
-header>nav>ul>li>a{
+header>nav>ul>li:hover{
+    background-color: #15181a;
+   
+}
+
+header>nav>ul>li>a {
     text-decoration: none;
     color: white;
     font-weight: 200;
     width: fit-content;
 }
-header>nav>ul>li>a:hover{
+
+header>nav>ul>li>a:hover {
     border-bottom: 3px solid rgb(191, 191, 115);
 }
+
 /* hero section */
-hero{
-    
+hero {
+    margin-top: -50px;
+    z-index: 0;
 }
-hero>main{
-     
+
+hero>main {
+
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-hero>main>section:first-child>button{
+
+hero>main>section:first-child>button {
     background-color: #15181a;
     border: 1px solid rgb(191, 191, 115);
     color: rgb(191, 191, 115);
@@ -133,77 +168,92 @@ hero>main>section:first-child>button{
     margin-top: 10px;
     width: 20%;
 }
-hero>main>section:first-child>button>a{
+
+hero>main>section:first-child>button>a {
     text-decoration: none;
     color: rgb(191, 191, 115);
 }
-hero>main>section:first-child>button>a:hover{
+
+hero>main>section:first-child>button>a:hover {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-hero>main>section:first-child{
+
+hero>main>section:first-child {
     place-self: center end;
 }
-hero>main>section:first-child>p{
+
+hero>main>section:first-child>p {
     width: 80%;
 }
-hero>main>section:first-child>button:hover{
-    background-color:rgb(191, 191, 115) ;
+
+hero>main>section:first-child>button:hover {
+    background-color: rgb(191, 191, 115);
     color: #15181a;
     border: #15181a;
 }
 
-hero>main>img{
+hero>main>img {
     width: 20%;
     opacity: 0.8;
     box-shadow: rgb(0, 0, 0) 0px 10px 20px, rgb(0, 0, 0) 0px 6px 6px;
-    
+
 }
-hero>section{
+
+hero>section {
     display: flex;
     justify-content: center;
 }
-hero>section>a>img{
+
+hero>section>a>img {
     width: 25px;
     height: 25px;
     padding: 5px;
     margin-top: -50px;
-    
+
 }
-#aboutMe{
+
+#aboutMe {
     margin-top: 50px;
     display: flex;
     height: 500px;
     align-items: center;
 }
-#aboutMe>section{
+
+#aboutMe>section {
     display: flex;
     justify-content: center;
 }
-#aboutMe>section>img{
+
+#aboutMe>section>img {
     width: 25%;
     height: fit-content;
     place-self: center start;
     margin-right: 5px;
 }
-#aboutMe>section>div{
+
+#aboutMe>section>div {
     place-self: start start;
     margin-left: 5px;
 
 }
-#aboutMe>section>div>h1{
+
+#aboutMe>section>div>h1 {
     margin: 0;
     padding: 0;
 }
-#aboutMe>section>div>h1>span{
+
+#aboutMe>section>div>h1>span {
     color: rgb(191, 191, 115);
 }
-#aboutMe>section>div>p{
+
+#aboutMe>section>div>p {
     margin: 0;
     padding: 0;
     width: 100%;
 }
-#aboutMe>section>div>div{
+
+#aboutMe>section>div>div {
     width: 100%;
     box-shadow: rgba(125, 125, 125, 1) 0px 50px 100px -20px, rgba(131, 131, 131, 1) 0px 30px 60px -30px, rgba(112, 112, 112, 1) 0px -2px 6px 0px inset;
     height: 50px;
@@ -211,46 +261,52 @@ hero>section>a>img{
     border-radius: 10px;
     align-content: center;
 }
-#aboutMe>section>div>div>h1{
+
+#aboutMe>section>div>div>h1 {
     font-size: 0.8rem;
     color: rgb(148, 148, 148);
     padding: 5px;
     width: 20%;
     display: inline-block;
-    
+
 }
 
-#skill>section{
+#skill>section {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     height: 500px;
     padding: 20%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
-    grid-gap:30px ;
+    grid-gap: 30px;
     position: relative;
 }
-#skill>section>div{
+
+#skill>section>div {
 
     width: 90%;
     height: 90%;
     background-color: rgb(45, 45, 45);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
-    
+
 }
-.skillBox{
+
+.skillBox {
     position: relative;
 }
-#skill>h1{
+
+#skill>h1 {
     margin-top: 10%;
     text-align: center;
 }
-#skill>h1>span{
+
+#skill>h1>span {
     color: rgb(191, 191, 115);
 }
-.skillBox:hover::before{
+
+.skillBox:hover::before {
     content: "";
 
     width: 100%;
@@ -263,40 +319,46 @@ hero>section>a>img{
     animation: ani 0.6s;
 
 }
+
 @keyframes ani {
-    0%{
+    0% {
         translate: 0 100% 0;
         opacity: 0;
     }
-    25%{
+
+    25% {
         translate: 0 75% 0;
         opacity: 0;
     }
-    50%{
+
+    50% {
         translate: 0 50% 0;
         opacity: 0;
     }
-    75%{
+
+    75% {
         translate: 0 25% 0;
         opacity: 0;
     }
-    100%{
+
+    100% {
         translate: 0 0 0;
         opacity: 1;
     }
 }
-#skill>section>div{
+
+#skill>section>div {
     padding: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-#skill>section>div>div>button{
-    background-color:rgb(45, 45, 45);
+#skill>section>div>div>button {
+    background-color: rgb(45, 45, 45);
     color: white;
     border: 1px solid rgb(191, 191, 115);
     padding: 5px;
@@ -304,7 +366,7 @@ hero>section>a>img{
 
 }
 
-#skill .technologies{
+#skill .technologies {
     width: 100%;
     height: 100%;
     display: flex;
@@ -314,48 +376,57 @@ hero>section>a>img{
     font-weight: 500;
 
 }
-#skill .technologies>div{
+
+#skill .technologies>div {
     margin: 10px;
 }
-#skill .technologies{
+
+#skill .technologies {
     margin: 10px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; 
-    
+    transition: opacity 0.3s ease-in-out;
+
 
 }
-#skill .technologies:hover{
+
+#skill .technologies:hover {
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
-   
+
 }
-#education>section{
+#education{
+    z-index: 0;
+}
+
+#education>section {
     display: flex;
     justify-content: center;
-    align-items: center;    
-    padding:150px;
+    align-items: center;
+    padding: 150px;
     padding-bottom: 0;
     margin-bottom: 200px;
-    
+
 }
-#education>section>div{
+
+#education>section>div {
     width: 30%;
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
     z-index: 2;
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     height: fit-content;
     padding: 20px;
     background-size: cover;
-    
+
 
 }
 
-#education>section>div>i{
+#education>section>div>i {
     color: rgb(191, 191, 115);
 }
-#education>section>div:nth-child(1){
+
+#education>section>div:nth-child(1) {
     font-size: 0.9rem;
     width: 20%;
     height: fit-content;
@@ -363,7 +434,8 @@ hero>section>a>img{
     left: 20px;
     z-index: 1;
 }
-#education>section>div:nth-child(3){
+
+#education>section>div:nth-child(3) {
     width: 20%;
     height: fit-content;
     position: relative;
@@ -371,67 +443,81 @@ hero>section>a>img{
     z-index: 1;
     font-size: 0.9rem;
 }
-#education>h1{
+
+#education>h1 {
     text-align: center;
 
 }
-#education>h1>span{
+
+#education>h1>span {
     color: rgb(191, 191, 115);
 }
-#education>section>div>h3{
+
+#education>section>div>h3 {
     color: rgb(191, 191, 115);
 }
-#education>section>div:hover{
+
+#education>section>div:hover {
     scale: 1.5;
     z-index: 3;
 }
-#project{
+
+#project {
     display: flex;
     padding: 15%;
     padding-top: 0;
 }
-#project>#desc{
+
+#project>#desc {
     width: 40%;
 }
-#project>#wrapper{
+
+#project>#wrapper {
     width: 60%;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    padding:10px;
+    padding: 10px;
 }
-#project>#wrapper::-webkit-scrollbar{
+
+#project>#wrapper::-webkit-scrollbar {
     width: 0;
 }
-#project>#wrapper>div{
+
+#project>#wrapper>div {
     border-radius: 20px;
     min-width: 40%;
     height: 250px;
     margin-left: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     position: relative;
 
 }
-#project span{
+
+#project span {
     color: rgb(191, 191, 115);
 }
-#project h1{
+
+#project h1 {
     margin-top: 4%;
     font-size: 2rem;
 
 }
-#project>#desc>p>span{
+
+#project>#desc>p>span {
     font-weight: bold;
 }
-#project>#wrapper>div>h5{
+
+#project>#wrapper>div>h5 {
     text-align: center;
     color: white;
     font-weight: 100;
 }
-#project>#desc>button{
+
+#project>#desc>button {
     background-color: #15181a;
-    border:1px solid rgb(191, 191, 115);
+    border: 1px solid rgb(191, 191, 115);
     color: white;
     padding: 7px;
     border-radius: 10px;
@@ -439,24 +525,29 @@ hero>section>a>img{
     font-weight: 500;
     margin-top: 1%;
 }
-#project>#desc>button>a{
+
+#project>#desc>button>a {
     text-decoration: none;
     color: rgb(191, 191, 115);
 }
-#project>#desc>button:hover>a{
+
+#project>#desc>button:hover>a {
     color: #15181a;
 }
-#project>#desc>button:hover{
+
+#project>#desc>button:hover {
     background-color: rgb(191, 191, 115);
     color: black;
     border: 1px #15181a solid;
     cursor: pointer;
 }
-#project>#wrapper>div>img{
+
+#project>#wrapper>div>img {
     width: 100%;
     opacity: 0.4;
 }
-#project>#wrapper>div>button{
+
+#project>#wrapper>div>button {
     width: 80%;
     height: fit-content;
     margin: 10%;
@@ -466,64 +557,76 @@ hero>section>a>img{
     color: white;
     border-radius: 10px;
 }
-#project>#wrapper>div>button>a{
+
+#project>#wrapper>div>button>a {
     color: white;
     text-decoration: none;
 }
-#project>#wrapper>div:hover{
+
+#project>#wrapper>div:hover {
     scale: 1.1;
 }
-#project>#wrapper>div>img:hover{
+
+#project>#wrapper>div>img:hover {
     opacity: 1;
 }
-#assignment>h1{
+
+#assignment>h1 {
     text-align: center;
 }
-#assignment span{
+
+#assignment span {
     color: rgb(191, 191, 115);
 }
-#assignment #wrapper{
+
+#assignment #wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8em;
     padding-top: 5em;
 }
-#assignment #wrapper>.list{
+
+#assignment #wrapper>.list {
     display: grid;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
     min-width: 70%;
 }
-#assignment #wrapper>.list::-webkit-scrollbar{
+
+#assignment #wrapper>.list::-webkit-scrollbar {
     width: 0;
 }
-#assignment #wrapper>.list>.box{
-    min-width:300px;
+
+#assignment #wrapper>.list>.box {
+    min-width: 300px;
     height: 300px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     margin: 10px;
     border-radius: 12px;
     position: relative;
 }
-#assignment #wrapper>.list>.box>div:first-child{
+
+#assignment #wrapper>.list>.box>div:first-child {
     width: 100%;
     height: 100%;
 }
 
-#assignment #wrapper>.list>.box>div:first-child>div:first-child{
+#assignment #wrapper>.list>.box>div:first-child>div:first-child {
     width: 100%;
     height: 60%;
-    border-top-left-radius: 12px ;
-    border-top-right-radius: 12px ;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
-#assignment #wrapper>.list>.box>div:last-child{
+
+#assignment #wrapper>.list>.box>div:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;width: 100%;
+    align-items: center;
+    width: 100%;
     height: 100%;
     background: black;
     border-radius: 12px;
@@ -533,19 +636,22 @@ hero>section>a>img{
 
 
 }
-#assignment #wrapper > .list > .box:hover{
+
+#assignment #wrapper>.list>.box:hover {
     background-color: rgb(193, 193, 193);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-#assignment #wrapper > .list > .box:hover > div:first-child {
+
+#assignment #wrapper>.list>.box:hover>div:first-child {
     display: none;
 }
-#assignment #wrapper > .list > .box:hover > div:last-child{
+
+#assignment #wrapper>.list>.box:hover>div:last-child {
     margin: 0;
     -webkit-transition: 2s;
 }
 
-#assignment #wrapper>.list>.box>div:last-child::before{
+#assignment #wrapper>.list>.box>div:last-child::before {
     background-color: rgb(87, 87, 87);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     background-size: cover;
@@ -558,142 +664,318 @@ hero>section>a>img{
     opacity: 0.2;
     border-radius: 12px;
 }
-#assignment #wrapper>.list>.box>div:last-child>div{
+
+#assignment #wrapper>.list>.box>div:last-child>div {
     z-index: 1;
 
 }
 
-#assignment #wrapper>.list>.box>div:last-child>div>button{
+#assignment #wrapper>.list>.box>div:last-child>div>button {
     background: #15181a;
     border: 1px solid rgb(191, 191, 115);
     padding: 2%;
-    color : white;
+    color: white;
     margin: 1px;
     border-radius: 10px;
     width: 100px;
 }
-#assignment #wrapper>.list>.box>div:last-child>div>button{
-    background: #15181a;
+
+#assignment #wrapper>.list>.box>div:last-child>div>button:hover {
+    background: rgb(191, 191, 115);
     border: 1px solid rgb(191, 191, 115);
     padding: 2%;
-    color : white;
+    color: black;
     margin: 1px;
     border-radius: 10px;
     width: 100px;
 }
-#assignment #wrapper>.list>.box #img1{
-    background-image: url("assets/imgs/a84cb52512994103b4c506741682a274.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#assignment #wrapper>.list>.box #img2{
-    background-image: url("assets/imgs/10d3ccda625625ac425a5fc7c8216f39.gif");
+
+#assignment #wrapper>.list>.box #img1 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#assignment #wrapper>button{
+#assignment #wrapper>.list>.box #img2 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img3 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img4 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img5 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img6 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img7 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img8 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img9 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>.list>.box #img10 {
+    background-image: url("assets/imgs/e0742eb995530288e38912fae386887e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#assignment #wrapper>button {
     padding: 8px;
     border: none;
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
 
 }
-#assignment #wrapper>button>img{
+#assignment #wrapper a{
+    text-decoration: none;
+    color:white;
+}
+#assignment #wrapper a:hover{
+    color:#15181a;
+}
+#assignment #wrapper>button>img {
     width: 25px;
     height: 25px;
 }
-#assignment #wrapper>button:nth-child(1){
+
+#assignment #wrapper>button:nth-child(1) {
     transform: rotate(180deg);
 }
-#assignment #wrapper>.list>.box{
-    
+
+#assignment #wrapper>.list>.box {}
+
+#gallery>h1{
+    text-align: center;
+}
+#gallery span{
+    color: rgb(191, 191, 115);
 }
 
-.hireMe>h1:first-child{
+#slider {
+    position: relative;
+    width: 50%;
+    height: 32vw;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    font-family: 'Helvetica Neue', sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+
+input[type=radio] {
+    position: relative;
+    top: 108%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
+}
+
+
+input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+}
+
+input[type=radio]:checked {
+    opacity: 1;
+}
+
+
+
+
+#slider label,
+#slider label img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(20%, 0, -100px);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(40%, 0, -250px);
+}
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(-40%, 0, -250px);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(-20%, 0, -100px);
+}
+
+.hireMe>h1:first-child {
     color: rgb(191, 191, 115);
     font-size: 1.3rem;
 
 }
-.hireMe>h1:nth-child(2){
+
+.hireMe>h1:nth-child(2) {
     font-size: 2.4rem;
-   
-   
+
+
 }
-.hireMe>h1{
+
+.hireMe>h1 {
     text-align: center;
 }
-.hireMe>section{
+
+.hireMe>section {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: start;
-  
-    
+
+
 }
-.hireMe>section>#contact>div{
+
+.hireMe>section>#contact>div {
     display: flex;
     align-items: center;
     padding: 1em;
-    margin:10px;
-    border-radius: 12px ;
-    background-color:rgb(45, 45, 45);
+    margin: 10px;
+    border-radius: 12px;
+    background-color: rgb(45, 45, 45);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.hireMe>section>#contact>div>div{
+
+.hireMe>section>#contact>div>div {
     display: flex;
     align-items: start;
     justify-content: start;
     font-size: 1.2rem;
 }
-.hireMe>section>#contact>div>div:nth-child(2)>a{
+
+.hireMe>section>#contact>div>div:nth-child(2)>a {
     color: white;
-    
+
 }
-.hireMe>section>#contact>div>div img{
+
+.hireMe>section>#contact>div>div img {
     width: 30px;
     height: 30px;
 }
-.hireMe>section>#email>form>div>input{
+
+.hireMe>section>#email>form>div>input {
     width: 100%;
     height: 30px;
     border-radius: 10px;
     border: 1px solid rgb(191, 191, 115);
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     color: white;
 }
-.hireMe>section>#email>form>div>textarea{
+
+.hireMe>section>#email>form>div>textarea {
     width: 100%;
     height: 100px;
     border-radius: 10px;
     border: 1px solid rgb(191, 191, 115);
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     color: white;
 }
-.hireMe>section>#email>form{
+
+.hireMe>section>#email>form {
     width: 90%;
     padding: 5%;
-    background-color:rgb(45, 45, 45);
+    background-color: rgb(45, 45, 45);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 10px;
     border-radius: 10px;
 }
-.hireMe{
+
+.hireMe {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.hireMe>section{
+
+.hireMe>section {
     padding: 10%;
     padding-top: 5%;
 }
-.hireMe>section>#email>form button{
+
+.hireMe>section>#email>form button {
     padding: 2%;
     background-color: rgb(45, 45, 45);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -702,307 +984,425 @@ hero>section>a>img{
     border-radius: 10px;
 
 }
+
 @media all and (max-width:1024px) {
-    html{
+    html {
         font-size: 90%;
     }
-    hero>main{
-     
+
+    hero>main {
+
         height: 400px;
-        
+
     }
-    #aboutMe>section>img{
+
+    #aboutMe>section>img {
         width: 30%;
     }
-    #skill>section{
+
+    #skill>section {
         grid-gap: 20px;
     }
-    #skill>section>div{
+
+    #skill>section>div {
         height: 90%;
     }
-    #education>section>div{
+
+    #education>section>div {
         font-size: 0.8rem;
     }
-    #education>section>div:first-child{
+
+    #education>section>div:first-child {
         width: 30%;
     }
-    #education>section>div:last-child{
+
+    #education>section>div:last-child {
         width: 30%;
     }
-    #project>#wrapper>div{
+
+    #project>#wrapper>div {
         height: 100%;
     }
-    #project>#wrapper>div>button{
+
+    #project>#wrapper>div>button {
         font-size: 0.7rem;
     }
-    #assignment>#wrapper>section>div{
+
+    #assignment>#wrapper>section>div {
         min-width: 20%;
     }
-    .hireMe>section>div:nth-child(1)>form>div>input{
+
+    .hireMe>section>div:nth-child(1)>form>div>input {
         height: 30px;
-        
+
     }
-    .hireMe>section>div:nth-child(1)>form>div>button{
+
+    .hireMe>section>div:nth-child(1)>form>div>button {
         padding: 0.8%;
     }
-    .hireMe>section>div:nth-child(1)>form>div>textarea{
+
+    .hireMe>section>div:nth-child(1)>form>div>textarea {
         height: 100px;
     }
-    #assignment #wrapper>.list>.box{
-        min-width:150px;
+
+    #assignment #wrapper>.list>.box {
+        min-width: 150px;
         height: 200px;
     }
 }
+
 @media all and (max-width:769px) {
-    html{
+    html {
         font-size: 80%;
     }
-    hero>main>img{
-        width: 25%;
-        
+
+    #welcomw {
+        font-size: 70%;
     }
-    #aboutMe>section>img{
+
+    hero>main>img {
+        width: 25%;
+
+    }
+
+    hero>section>a {
+        width: 35px;
+        height: 35px;
+    }
+
+    hero>section>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #aboutMe>section>img {
         width: 38%;
     }
-    #aboutMe>section{
+
+    #aboutMe>section {
         padding: 10px;
     }
-    #skill>section{
-        grid-template-columns: repeat(2,1fr);
+
+    #skill>section {
+        grid-template-columns: repeat(2, 1fr);
     }
-    #skill>section>div{
+
+    #skill>section>div {
         height: 80%;
     }
-    #skill>section>div>div>button{
+
+    #skill>section>div>div>button {
         font-size: 0.8em;
     }
-    #education>section>div{
+
+    #education>section>div {
         font-size: 0.7rem;
     }
-    #education>section>div:first-child{
+
+    #education>section>div:first-child {
         font-size: 0.7rem;
     }
-    #education>section>div:last-child{
+
+    #education>section>div:last-child {
         font-size: 0.7rem;
     }
-    #education>section{
+
+    #education>section {
         padding-top: 50px;
         margin-bottom: 15%;
     }
-    #project>#wrapper>div{
-       height: 80%;
-       
+
+    #project>#wrapper>div {
+        height: 80%;
+
     }
-    #project>#desc>h1{
+
+    #project>#desc>h1 {
         font-size: 3rem;
     }
-    #project>#desc>p{
+
+    #project>#desc>p {
         font-size: 0.8rem;
     }
-    #assignment>#wrapper>section>div{
+
+    #assignment>#wrapper>section>div {
         min-width: 25%;
     }
 }
-@media all and (max-width:426px){
-    html{
+
+@media all and (max-width:426px) {
+    html {
         font-size: 70%;
     }
-    header>nav{
+
+    #welcome {
+        font-size: 0.8rem;
+    }
+
+    header>nav {
         display: none;
     }
-    hero>main{
+
+    hero>main {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         text-align: center;
-    
+
     }
-    hero>main>section:first-child{
+
+    hero>main>section:first-child {
         padding: 10px;
     }
-    hero>main>section:first-child>p{
+
+    hero>main>section:first-child>p {
         width: 100%;
     }
-    hero>section>img{
+
+    hero>section>img {
         width: 20px;
         height: 20px;
         padding: 3px;
         margin-top: -9%;
-       
-        
+
+
     }
-    hero>main>img{
+
+    hero>main>img {
         width: 35%;
     }
-    #aboutMe{
+
+    hero>section>a {
+        width: 30px;
+        height: 30px;
+    }
+
+    hero>section>a>img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #aboutMe {
         margin-top: 100px;
     }
-    #aboutMe>section>img{
+
+    #aboutMe>section>img {
         width: 60%;
     }
-    #aboutMe>section{
+
+    #aboutMe>section {
         width: 100%;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        
+
     }
-    #aboutMe>section>div{
+
+    #aboutMe>section>div {
         padding: 10%;
     }
-    #aboutMe>section>div>h1{
+
+    #aboutMe>section>div>h1 {
         text-align: center;
     }
-    #skill>section{
+
+    #skill>section {
         padding: 10%;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    #skill>section>div{
+
+    #skill>section>div {
         width: 85%;
         margin: 10px;
     }
-    #skill{
+
+    #skill {
         margin-top: 100px;
     }
-    #skill>section>div>div>button{
+
+    #skill>section>div>div>button {
         font-size: 0.8em;
     }
-    #education>section{
+
+    #education>section {
         flex-direction: column;
     }
-    #education>section>div{
+
+    #education>section>div {
         margin-top: 4%;
         width: 150%;
     }
-    #education>section>div:first-child{
+
+    #education>section>div:first-child {
         left: 0;
         width: 150%;
-        
+
     }
-    #education>section>div:last-child{
+
+    #education>section>div:last-child {
         right: 0;
         width: 150%;
     }
-    #education{
+
+    #education {
         margin-top: 100%;
     }
-    #project{
+
+    #project {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #project>#desc{
+
+    #project>#desc {
         width: 90%;
         font-size: 1.5rem;
     }
-    #project>#desc>h1{
+
+    #project>#desc>h1 {
         text-align: center;
         font-size: 2rem;
     }
-    #project>#wrapper{
+
+    #project>#wrapper {
         width: 100%;
         padding-left: 0;
-        
-        
+
+
     }
-    #project>#desc>button{
+
+    #project>#desc>button {
         padding: 4px;
     }
-    #assignment #wrapper>.list>.box{
-        min-width:150px;
+
+    #assignment #wrapper>.list>.box {
+        min-width: 150px;
         height: 200px;
     }
-    #assignment #wrapper>button{
+
+    #assignment #wrapper>button {
         width: 40px;
     }
-    #assignment #wrapper>button>img{
+
+    #assignment #wrapper>button>img {
         width: 20px;
         height: 20px;
     }
-   
-    .hireMe>section{
+    input[type=radio] {
+        left: 57%;
+        width: 10px;
+        height: 10px;
+        
+    }
+
+    .hireMe>section {
         grid-template-columns: 1fr;
     }
-    .hireMe>section #email{
+
+    .hireMe>section #email {
         margin: 0;
         width: 92%;
     }
-    .hireMe>section>#contact>div{
+
+    .hireMe>section>#contact>div {
         padding: 0.8em;
     }
 
 }
-@media all and (max-width:376px){
-    #education>section>div{
+
+@media all and (max-width:376px) {
+    #education>section>div {
         margin-top: 4%;
         width: 200%;
     }
-    #education>section>div:first-child{
+
+    #education>section>div:first-child {
         left: 0;
         width: 200%;
-        
+
     }
-    #education>section>div:last-child{
+
+    #education>section>div:last-child {
         right: 0;
         width: 200%;
     }
-    #project>#desc{
+
+    #project>#desc {
         width: 90%;
     }
-    #project>#desc>button{
+
+    #project>#desc>button {
         font-size: 0.6rem;
         padding: 3px;
     }
-    #assignment>#wrapper>section>div{
+
+    #assignment>#wrapper>section>div {
         min-width: 65%;
     }
-    #assignment #wrapper>.list>.box{
-        min-width:125px;
+
+    #assignment #wrapper>.list>.box {
+        min-width: 125px;
         height: 180px;
     }
-    #assignment #wrapper>button{
+
+    #assignment #wrapper>button {
         width: 25px;
         height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-} 
+}
+
 @media all and (max-width:321px) {
-    html{
+    html {
         font-size: 60%;
     }
-    #education>section>div{
+
+    #education>section>div {
         width: 200px;
         margin-top: 20%;
     }
-    #education>section>div:first-child{
+
+    #education>section>div:first-child {
         left: 0;
         width: 200px;
-        
+
     }
-    #education>section>div:last-child{
+
+    #education>section>div:last-child {
         right: 0;
         width: 200px;
     }
-    #assignment>#wrapper>section>div{
+
+    #assignment>#wrapper>section>div {
         min-width: 75%;
     }
-    #assignment #wrapper>.list>.box{
-        min-width:150px;
+
+    #assignment #wrapper>.list>.box {
+        min-width: 150px;
         height: 200px;
     }
-    #assignment #wrapper>.list{
+
+    #assignment #wrapper>.list {
         min-width: 100%;
     }
-    .hireMe>section>div:nth-child(1)>form>div>button{
+    input[type=radio] {
+        left: 65%;
+        width: 8px;
+        height: 8px;
+        
+    }
+
+
+    .hireMe>section>div:nth-child(1)>form>div>button {
         padding: 1%;
-        background-color:  rgb(38, 38, 38);
+        background-color: rgb(38, 38, 38);
         border: 1px solid rgb(191, 191, 115);
         color: white;
         width: 70px;
         border-radius: 10px;
     }
-    
+
 }

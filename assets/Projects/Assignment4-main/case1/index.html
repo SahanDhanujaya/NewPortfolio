@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 1</title>
+    <style>
+        ul{
+            padding: 0;
+            height: 100vh;
+            position: relative;
+            align-content: center;
+        }
+        ul>li{
+            display: flex;
+            position: relative;
+            right: 100px;
+            width: 150px;
+            height: 45px;
+            background-color: rgb(149, 0, 255);
+            list-style: none;
+            margin-top:25px;
+            align-items: center;
+            box-shadow:rgb(130, 130, 130) 7px 7px 10px;
+
+            transition-property: transform;
+            transition-duration: 200ms;
+            transition-timing-function: linear;
+        }
+        ul>li>p{
+            position: relative;
+            left: 5px;
+            font-weight: bold;
+            color: white;
+            width: 100px;
+        }
+        ul>li>img{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: 4px;
+            
+        }
+        ul>li:hover{
+            transform: translateX(92px);
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- unordered list -->
+    <ul>
+        <li><p>Menu 01</p><img src="assets/icons/icons8-phonebook-64.png" alt="phonebook icon"></li>
+        <li><p>Menu 02</p><img src="assets/icons/icons8-ambulance-64.png" alt="icon"></li>
+        <li><p>Menu 03</p><img src="assets/icons/icons8-sim-50.png" alt="icon"></li>
+        <li><p>Menu 04</p><img src="assets/icons/icons8-react-40.png" alt="icon"></li>
+        <li><p>Menu 05</p><img src="assets/icons/icons8-cart-48.png" alt="icon"></li>
+    </ul>
+</body>
+</html>

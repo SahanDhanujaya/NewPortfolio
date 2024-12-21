@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <input id="display" readonly>
+        <section>
+            <button id="btn1" style="color: red;" onclick="clearDisplay()">AC</button>
+            <button id="btn2" onclick="clearDisplay()">C</button>
+            <button id="btn3" onclick="displayValue('%')">%</button>
+            <button id="btn4" onclick="displayValue('/')">/</button>
+            <button id="btn5" onclick="displayValue('7')">7</button>
+            <button id="btn6" onclick="displayValue('8')">8</button>
+            <button id="btn7" onclick="displayValue('9')">9</button>
+            <button id="btn8" onclick="displayValue('*')">x</button>
+            <button id="btn9" onclick="displayValue('4')">4</button>
+            <button id="btn10" onclick="displayValue('5')">5</button>
+            <button id="btn11" onclick="displayValue('6')">6</button>
+            <button id="btn12" onclick="displayValue('-')">-</button>
+            <button id="btn13" onclick="displayValue('1')">1</button>
+            <button id="btn14" onclick="displayValue('2')">2</button>
+            <button id="btn15" onclick="displayValue('3')">3</button>
+            <button id="btn16" onclick="displayValue('+')">+</button>
+            <button id="btn17" onclick="displayValue('.')">.</button>
+            <button id="btn18" onclick="displayValue('0')">0</button>
+            <button id="btn19" onclick="displayValue('<')"><</button>
+            <button id="btn20" onclick="calculate()">=</button>
+        </section>
+    </main>
+    <script src="assets/lib/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

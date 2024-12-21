@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>case3</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: purple;
+            border-radius: 10px;
+            animation: myAnimation 5s linear alternate infinite ;
+        }
+        @keyframes myAnimation{
+            0%{
+                margin: 0;
+            }
+            25%{
+                margin-left: 80vw;
+                margin-top: 0;
+                rotate: 180deg;
+                background-color: green;
+            }
+            50%{
+                margin-left: 80vw;
+                margin-top: 70vh;
+                background-color: red;
+                rotate: 0deg;
+                
+            }
+            75%{
+                margin-top: 70vh;
+                margin-left: 0;
+                background-color: yellow;
+                rotate: 180deg;
+
+            }
+            100%{
+                margin-bottom: 70vh;
+                margin-left: 0;
+                background-color: blue;
+                rotate: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- squre -->
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>
